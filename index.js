@@ -1,3 +1,4 @@
+/*
 const images = ['fox1', 'fox2', 'fox3', 'fox4'];
 const imgElem = document.querySelector('img');
 
@@ -10,7 +11,7 @@ setInterval(() => {
   const randomChoice = randomValueFromArray(images);
   imgElem.src = `images/${randomChoice}.jpg`;
 }, 2000);
-
+*/
 // Register service worker to control making site work offline
 
 if ('serviceWorker' in navigator) {
@@ -22,7 +23,7 @@ if ('serviceWorker' in navigator) {
 // Code to handle install prompt on desktop
 
 let deferredPrompt;
-const addBtn = document.querySelector('.add-button');
+const addBtn = document.querySelector('.btn.btn-primary');
 addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
